@@ -10,7 +10,15 @@
  * @return {number}
  */
 var fib = function(N) {
-
+    if(N < 2){
+        return N
+    }
+    let a = 0,b=1
+    for (let i = 2; i<=N;i++){
+        b=a+b;
+        a=b-a; 
+    }
+    return b
 };
 // @lc code=end
 
